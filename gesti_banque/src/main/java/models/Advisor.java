@@ -45,7 +45,7 @@ public class Advisor extends User {
 			return false;
 	}
 
-	// ici le conseiller doit v�rifier que le solde du compte soit � 0 donc pas de
+	// ici le conseiller doit verifier que le solde du compte soit egale à 0 donc pas de
 	// decouvert ni d'avoir pour valider la fermeture du compte en cochant la bonne
 	// case
 	public boolean validateClosedCompte(float solde, boolean close) {
@@ -55,8 +55,7 @@ public class Advisor extends User {
 			return false;
 	}
 
-	// pour la modification du compte il me faut la classe compte donc elle sera
-	// faite plus tard
+	// liste de l'ensemble des données relatives à un client par conseiller
 
 	public ArrayList<User> showClientList(String matricule)
 	{
@@ -88,6 +87,7 @@ public class Advisor extends User {
 		return liste;
 	}
 
+	// liste de l'ensemble des données relatives à un client par conseiller et par nom
 	public ArrayList<User> showClientSearchByName(String matricule, String name){
 		 ArrayList <User> liste=new ArrayList<User>();
 			try
@@ -118,6 +118,7 @@ public class Advisor extends User {
 			return liste;		
 	}
 
+	// liste de l'ensemble des données relatives à un client par conseiller et par numero de compte
 	public ArrayList<User> showClientSearchByNumberAccount(String matricule, String NumberAccount){
 		 ArrayList <User> liste=new ArrayList<User>();
 			try
