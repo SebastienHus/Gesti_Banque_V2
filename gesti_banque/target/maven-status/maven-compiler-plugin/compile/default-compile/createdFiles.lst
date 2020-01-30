@@ -1,0 +1,12 @@
+models\Compte.class
+models\Tools.class
+models\Admin.class
+models\Chequier.class
+models\User.class
+models\Notification.class
+models\Advisor.class
+models\Address.class
+models\Research.class
+Connexion.class
+test.class
+controller\AuthentificationController.class
