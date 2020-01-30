@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `adresse` (
   `codePostal` varchar(255) NOT NULL,
   `rue` varchar(255) NOT NULL,
   PRIMARY KEY (`IdAdresse`)
-) ENGINE=MyISAM AUTO_INCREMENT=201 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=201 DEFAULT CHARSET=utf8mb4 ;
 
 --
 -- Déchargement des données de la table `adresse`
@@ -261,7 +261,7 @@ CREATE TABLE IF NOT EXISTS `affectationhisto` (
   KEY `ct4` (`idAdmin`),
   KEY `ct5` (`idAgent`),
   KEY `ct6` (`idDemande`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 ;
 
 -- --------------------------------------------------------
 
@@ -284,7 +284,7 @@ CREATE TABLE IF NOT EXISTS `compte` (
   `seuilMinRemu` float NOT NULL,
   PRIMARY KEY (`IdCompte`),
   KEY `cts13` (`IdClient`)
-) ENGINE=MyISAM AUTO_INCREMENT=101 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=101 DEFAULT CHARSET=utf8mb4 ;
 
 --
 -- Déchargement des données de la table `compte`
@@ -407,7 +407,7 @@ CREATE TABLE IF NOT EXISTS `demande` (
   `demandeCloture` tinyint(1) NOT NULL,
   PRIMARY KEY (`IDDemande`),
   KEY `cts11` (`id_client`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 ;
 
 -- --------------------------------------------------------
 
@@ -421,7 +421,7 @@ CREATE TABLE IF NOT EXISTS `justificatif` (
   `justificatif` longblob NOT NULL,
   `IDDemande` int(11) NOT NULL,
   PRIMARY KEY (`IdJustificatif`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 ;
 
 -- --------------------------------------------------------
 
@@ -441,7 +441,7 @@ CREATE TABLE IF NOT EXISTS `notification` (
   KEY `cts8` (`idClient`),
   KEY `cts9` (`idAgent`),
   KEY `cts10` (`idTransaction`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 ;
 
 -- --------------------------------------------------------
 
@@ -454,7 +454,7 @@ CREATE TABLE IF NOT EXISTS `role` (
   `IdRole` int(11) NOT NULL AUTO_INCREMENT,
   `role` varchar(255) NOT NULL,
   PRIMARY KEY (`IdRole`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 ;
 
 -- --------------------------------------------------------
 
@@ -473,7 +473,7 @@ CREATE TABLE IF NOT EXISTS `transaction` (
   PRIMARY KEY (`IdTransaction`),
   KEY `cts15` (`numCompte`),
   KEY `cts16` (`idVirement`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 ;
 
 -- --------------------------------------------------------
 
@@ -501,7 +501,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   KEY `ct2` (`idBoss`),
   KEY `ct3` (`idVisaVis`),
   KEY `titou` (`idAdresse`)
-) ENGINE=MyISAM AUTO_INCREMENT=101 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=101 DEFAULT CHARSET=utf8mb4 ;
 
 --
 -- Déchargement des données de la table `user`
@@ -623,7 +623,7 @@ CREATE TABLE IF NOT EXISTS `virement` (
   PRIMARY KEY (`IdVirement`),
   KEY `cts17` (`numCompteDeb`),
   KEY `cts18` (`numCompteCred`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 ;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -6,20 +6,21 @@ public class User {
 
 	// param(s)
 	private long id;
-	
+
 	private String login;
 	private String firstname;
 	private String lastName;
 	private String email;
 	private String password;
 	private long phone;
-	private long address;
+	private Address address;
 	private long typeOfUser;
 
 	public User verifUser(String username, String password) {
 		Connexion cnx = new Connexion();
 		Connection con = cnx.getCnx();
 		User u = new User();
+		Address a = new Address();
 		try {
 			PreparedStatement ps = con.prepareStatement("SELECT * FROM User WHERE login = ? and password = ?");
 			ps.setString(1, username);
@@ -27,7 +28,7 @@ public class User {
 			ResultSet rs = ps.executeQuery();
 			if (rs.next()) {
 				u.setId(rs.getInt(1));
-				u.setAddress(rs.getLong(13));
+				u.setAddress(a.getAddress(rs.getLong(13)));
 				u.setEmail(rs.getString(6));
 				u.setFirstname(rs.getString(5));
 				u.setLastName(rs.getString(4));
@@ -37,8 +38,7 @@ public class User {
 				u.setTypeOfUser(rs.getLong(8));
 				System.out.println("User capté :" + u);
 				return u;
-			}
-			else
+			} else
 				return null;
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -61,6 +61,7 @@ public class User {
 	public void setId(int id) {
 		this.id = id;
 	}
+
 	// Constructor(s)
 	public User() {
 		super();
@@ -68,7 +69,7 @@ public class User {
 	}
 
 	public User(String login, String firstname, String lastName, String email, String password, long phone,
-			long address, long typeOfUser) {
+			Address address, long typeOfUser) {
 		super();
 		this.login = login;
 		this.firstname = firstname;
@@ -130,11 +131,11 @@ public class User {
 		this.phone = phone;
 	}
 
-	public long getAddress() {
+	public Address getAddress() {
 		return address;
 	}
 
-	public void setAddress(long address) {
+	public void setAddress(Address address) {
 		this.address = address;
 	}
 
