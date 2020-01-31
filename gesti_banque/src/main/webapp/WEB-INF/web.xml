@@ -25,11 +25,13 @@
   	<description></description>
   	<servlet-class>controller.ServletRetour</servlet-class>
   </servlet>
+  
+  <!-- 
   <servlet>
   	<servlet-name>S1</servlet-name>
   	<jsp-file>/WEB-INF/views/common_views/login.jsp</jsp-file>
   </servlet>
-
+-->
 
   <servlet-mapping>
   	<servlet-name>ServletConnexion</servlet-name>
@@ -43,8 +45,11 @@
   	<servlet-name>ServletRetour</servlet-name>
   	<url-pattern>/retour</url-pattern>
   </servlet-mapping>
+  
+  <!-- 
   <servlet-mapping>
   	<servlet-name>S1</servlet-name>
   	<url-pattern>/login.jsp</url-pattern>
   </servlet-mapping>
+  -->
 </web-app>

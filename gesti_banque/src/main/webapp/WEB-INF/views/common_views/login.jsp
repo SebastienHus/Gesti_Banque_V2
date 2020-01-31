@@ -31,9 +31,6 @@
             </div>
             <br>
                 <input class="btn btn-success btn-block my-4" id="button3" type="submit" value="Connexion">
-                <input class="btn btn-success btn-block my-4" id="button3" type="submit" value="Retour">
-
-			
             
             </form>
             
