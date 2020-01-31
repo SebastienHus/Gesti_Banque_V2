@@ -16,7 +16,7 @@ public class Connexion {
 			Class.forName("com.mysql.jdbc.Driver");
 
 			// url de la base de donn�es
-			String url = "jdbc:mysql://localhost:3306/gestibankv2";
+			String url = "jdbc:mysql://localhost:3308/gestibankv2";
 			String user = "root";
 			String password = "";
 

@@ -1,8 +1,22 @@
 @charset "ISO-8859-1";
-body{
-	width: 300px;
-    background-color: green !important;
+
+body {
+	width: 500px;
+    background-color: red !important;
     border: 2px;
+}
+.header {
+	background: bleu !important;
+	text-align: center;
+}
+#logfield2{
+	background-color: (RGB 86, 101, 115) !important;
+	text-align: center;
+}
+.field1{
+	background-color: (RGB 86, 101, 115) !important;
+	text-align: center;
+
 }
 h2 {
 	color: bleu;
@@ -10,9 +24,16 @@ h2 {
 	text-align: center;
 	
 }
+#button {
+	max-width:207px !important;
+	margin-left: 15%;
+	color: red !important;
+	
+}
 #button3 {
 	max-width:207px !important;
 	margin-left: 15%;
+	color: bleu !important;
 	
 }
 #textInput {

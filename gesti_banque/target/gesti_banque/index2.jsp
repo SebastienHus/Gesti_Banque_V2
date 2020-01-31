@@ -2,14 +2,20 @@
 
 <html>
 <head>
-<style><%@include file="WEB-INF/components/head/header.jsp"%></style>
+<style><%@include file="WEB-INF/components/head/head.jsp"%></style>
 
 </head>
+
+	 <jsp:include page="/WEB-INF/components/headers/header.jsp">
+            <jsp:param name="" value=""/>
+        </jsp:include>
 
 	
 	<body>
 
+
 	
+
 	
 <div id="logfield" class="containerfluid">
     
@@ -39,5 +45,8 @@
 </div>
 
 	</body>
-
+	
+	 <jsp:include page="/WEB-INF/components/footers/footer.jsp">
+            <jsp:param name="" value=""/>
+        </jsp:include>
 </html>
