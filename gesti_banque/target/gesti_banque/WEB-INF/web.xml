@@ -10,8 +10,53 @@
   	<description></description>
   	<servlet-class>Servlets.ServletConnexion</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>Authentif</servlet-name>
+  	<display-name>Authentif</display-name>
+  	<description></description>
+  	<servlet-class>Servlets.Authentif</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ConversionDevisesServlet</servlet-name>
+  	<display-name>ConversionDevisesServlet</display-name>
+  	<description></description>
+  	<servlet-class>controller.ConversionDevisesServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ConversionDevises2Servlet</servlet-name>
+  	<display-name>ConversionDevises2Servlet</display-name>
+  	  	<description></description>
+  	
+  	<servlet-class>controller.ConversionDevises2Servlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DAconversionDevisesInput</servlet-name>
+	<jsp-file>/WEB-INF/views/common_views/conversionDevises1.jsp</jsp-file>
+  </servlet>
+  <servlet>
+  	<servlet-name>DAconversionDevisesOutput</servlet-name>
+  	<jsp-file>/WEB-INF/views/common_views/conversionDevises2.jsp</jsp-file>
+  </servlet>
+
   <servlet-mapping>
   	<servlet-name>ServletConnexion</servlet-name>
   	<url-pattern>/connexion</url-pattern>
   </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Authentif</servlet-name>
+  	<url-pattern>/Authentif</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+  	<servlet-name>ConversionDevisesServlet</servlet-name>
+  	<url-pattern>/conversion</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+   	<servlet-name>DAconversionDevisesInput</servlet-name>
+   	<url-pattern>/conversionInput.jsp</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+   	<servlet-name>DAconversionDevisesOutput</servlet-name>
+   	<url-pattern>/conversionOutput.jsp</url-pattern>
+   </servlet-mapping>
+
 </web-app>
