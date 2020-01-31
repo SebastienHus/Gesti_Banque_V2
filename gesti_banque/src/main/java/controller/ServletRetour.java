@@ -1,21 +1,23 @@
-package Servlets;
+package controller;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class ServletConnexion
+ * Servlet implementation class ServletRetour
  */
-public class ServletConnexion extends HttpServlet {
+public class ServletRetour extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ServletConnexion() {
+    public ServletRetour() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -24,12 +26,8 @@ public class ServletConnexion extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-//		response.getWriter().append("Served at: ").append(request.getContextPath());
-	     //String pathInfo = request.getPathInfo();
-	      request.getRequestDispatcher("/WEB-INF/views/common_views/login.jsp").forward(request, response);
-
-	
+System.out.println("coucou");
+	   request.getRequestDispatcher("/index.jsp").forward(request, response);
 	}
 
 	/**
@@ -41,3 +39,11 @@ public class ServletConnexion extends HttpServlet {
 	}
 
 }
+
+/*
+ 	servlet qui doit renvoyer a la page precedente automatiquement peut importe dou l on vient
+ 	attention gerer le cas ou l on vient juste de se connecter 
+ 	attention gerer le cas ou l onvient juste de se deconnecter
+ 	
+ 	pour le moment ne gere qu un cas de figure (retour a l index.jsp)
+ */

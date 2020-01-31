@@ -25,9 +25,8 @@
                         <div class="col-md-6">
                
                 <!--<input class="btn btn-success btn-block my-4" id="button3" type="submit" value="Connexion">-->
-                <a href="connexion">Connexion
-                 <button type="button" id="button3" class="btn btn-secondary btn-lg btn-block my-4">Connexion</button></a>
-                <button type="button" id="button3" class="btn btn-secondary btn-lg btn-block my-4"><a href="index.jsp">Retour</a></button>
+                <a href="connexion"><button type="button" id="button3" class="btn btn-secondary btn-lg btn-block my-4">Connexion</button></a>
+                <a href="index.jsp"><button type="button" id="button3" class="btn btn-secondary btn-lg btn-block my-4">Retour</button></a>
             </div>
             </div>
           

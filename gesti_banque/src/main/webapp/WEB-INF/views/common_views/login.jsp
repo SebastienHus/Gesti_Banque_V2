@@ -31,8 +31,21 @@
             </div>
             <br>
                 <input class="btn btn-success btn-block my-4" id="button3" type="submit" value="Connexion">
-                <button type="button" id="button3" class="btn btn-secondary btn-lg btn-block my-4"><a href="index.jsp">Retour</a></button>
+                <input class="btn btn-success btn-block my-4" id="button3" type="submit" value="Retour">
+
+			
+            
             </form>
+            
+            <a href="retour">
+            	<button type="button" id="button3" class="btn btn-secondary btn-lg btn-block my-4">
+                <!-- <input class="btn btn-success btn-block my-4" id="button3" type="submit" value="Connexion">-->
+                	Retour
+                	
+                </button>
+            </a>
+            
+            
             <a href="index.jsp" id="textInput">mot de passe oublié ?</a>
         </fieldset>	
     </div>    
