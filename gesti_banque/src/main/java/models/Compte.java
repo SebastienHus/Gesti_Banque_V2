@@ -138,7 +138,7 @@ public class Compte {
 	}
 
 	public accountSetting() {
-		
+		 
 	}
 
 	public accountClosureRequest() {
