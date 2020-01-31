@@ -13,11 +13,11 @@ public class Admin extends User {
 		
 	}
 
-/*	public Admin(String login, String firstname, String lastName, String email, String password, String phone,
+	public Admin(String login, String firstname, String lastName, String email, String password, String phone,
 			Address address, String typeOfUser) {
-		super(login, firstname, lastName, email, password, phone, address, typeOfUser);
+		super();
 		
-	}*/
+	}
 
 	public Admin(String matriculeAdmin) {
 		super();
@@ -44,10 +44,11 @@ public class Admin extends User {
 			int i = (int) Math.floor(Math.random() * 62);
 			pass += chars.charAt(i);
 		}
+		System.out.println(pass);
 		return pass;
 	}
 
-/*	public Advisor createAdvisor(User user, String matricule) {
+	public Advisor createAdvisor(User user, String matricule) {
 
 		Advisor advisor = new Advisor();
 
@@ -58,11 +59,12 @@ public class Admin extends User {
 		advisor.setEmail(user.getEmail());
 		advisor.setPhone(user.getPhone());
 		advisor.setMatriculeAdvisor(generate(5));
-		advisor.setTypeOfUser("Advisor");
+		advisor.setTypeOfUser(2);
 
+		System.out.println(advisor);
 		return advisor;
 
-	}*/
+	}
 
 	public boolean supprimerAgent(Advisor advisor, boolean deleteAdvisor) {
 		if (advisor != null && deleteAdvisor == true)
