@@ -1,16 +1,35 @@
+/* Extra small devices (portrait phones, less than 576px)*/
+/*No media query for `xs` since this is the default in Bootstrap*/
+/* Small devices (landscape phones, 576px and up)*/
+@media screen and (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up)*/
+@media screen and (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up)*/
+@media screen and (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media screen and (min-width: 1200px) {}
+
 @charset "ISO-8859-1";
 
 body {
 	width: 500px;
-    background-color: #c0c0c0!important;
+    background-color: #c0c0c0;
     border: 2px;
 }
-#header{
+#header911{
 	color: bleu !important;
+	background-color: #808080;
 }
-h2 {
-	color: bleu;
-	text-decoration: underline overline red;
+#footer {
+	color: bleu !important;
+	background-color: #949ca0;
+}
+legend {
+	color: bleu !important;
+	text-decoration: underline overline red !important;
 	text-align: center;
 	
 }

@@ -1,23 +1,9 @@
-<!DOCTYPE html>
 
-<html>
-<head>
-<style><%@include file="/WEB-INF/components/head/head.jsp"%></style>
-
-</head>
-<body>
-	<header id="header">
-		<div id="logfield2"  class="containerfluid">
-		    
+	<header >	
 		    <div class="row justify-content-center" id="logfield2">
-		        <fieldset id="logfield2" name="field1"  class="col-md-6 align-self-center f1">
+		        <fieldset id="header911" name="field1"  class="col-md-6 align-self-center f1"> 
 		                <legend id="textInput">GESTI BANQUE</legend>
 		              
 		        </fieldset>	
-		    </div>    
-		</div>
+		    </div> 	
 	</header>	
-
-</body>
-
-</html>

@@ -2,21 +2,11 @@
 
 body {
 	width: 500px;
-    background-color: red !important;
+    background-color: #c0c0c0!important;
     border: 2px;
 }
-.header {
-	background: bleu !important;
-	text-align: center;
-}
-#logfield2{
-	background-color: (RGB 86, 101, 115) !important;
-	text-align: center;
-}
-.field1{
-	background-color: (RGB 86, 101, 115) !important;
-	text-align: center;
-
+#header911{
+	color: bleu !important;
 }
 h2 {
 	color: bleu;

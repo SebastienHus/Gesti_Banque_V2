@@ -5,7 +5,11 @@
 <html>
 
 <head>
-<style><%@include file="WEB-INF/components/head/head.jsp"%></style>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
+
+<style><%@include file="WEB-INF/components/head/head.jsp"%>
+<%@include file="/WEB-INF/assets/css/main.css"%> 
+</style>
 
 </head>
 	
@@ -16,7 +20,7 @@
         </jsp:include>
 	
 	
-	<div id="logfield" class="containerfluid">
+	
     
     <div class="row  justify-content-center" id="logfield">
         <fieldset id="logfield" class="col-md-6 align-self-center f1">
@@ -35,7 +39,7 @@
         </fieldset>	
     </div>  
     
-    </div>   
+    
     
 	 <jsp:include page="/WEB-INF/components/footers/footer.jsp">
 	            <jsp:param name="" value=""/>
