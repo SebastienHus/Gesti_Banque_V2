@@ -27,7 +27,7 @@ public class ServletConnexion extends HttpServlet {
 		// TODO Auto-generated method stub
 //		response.getWriter().append("Served at: ").append(request.getContextPath());
 	     //String pathInfo = request.getPathInfo();
-	      request.getRequestDispatcher("/WEB-INF/views/common_views/login.jsp").forward(request, response);
+	      request.getRequestDispatcher("/WEB-INF/views/common_views/homeCommon.jsp").forward(request, response);
 
 	
 	}
